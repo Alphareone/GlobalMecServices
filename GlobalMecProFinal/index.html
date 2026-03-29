@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlobalMec | Taller de Élite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo"><img src="logo.png" alt="GlobalMec"></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <span class="badge">Servicio Técnico Especializado</span>
+      <h1>Precisión en cada <span class="text-gradient">Kilómetro</span></h1>
+      <p>Expertos en diagnóstico electrónico y mecánica avanzada para vehículos y motores marinos.</p>
+      <div class="hero-btns">
+        <a href="#contacto" class="btn btn-primary">Agendar Ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="section">
+    <div class="container grid-2">
+      <div class="reveal">
+        <span class="badge">Nuestra Historia</span>
+        <h2 class="section-title">Pasión por la <span class="text-gradient">Mecánica</span></h2>
+        <p>En GlobalMec, no solo reparamos vehículos; garantizamos seguridad y rendimiento. Con años de experiencia en el sector, nos hemos consolidado como líderes en diagnóstico digital.</p>
+        <ul class="check-list">
+          <li><i data-lucide="check-circle"></i> Tecnología de punta</li>
+          <li><i data-lucide="check-circle"></i> Transparencia total en presupuestos</li>
+          <li><i data-lucide="check-circle"></i> Personal certificado</li>
+        </ul>
+      </div>
+      <div class="img-container reveal">
+        <img src="quienes.jpg" alt="Taller" class="rounded-img">
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="section dark">
+    <div class="container">
+      <h2 class="section-title reveal" style="text-align: center;">Servicios <span class="text-gradient">Especializados</span></h2>
+      <div class="grid-services">
+        <article class="card reveal">
+          <div class="card-img"><img src="scanner.jpg" alt="Scanner"></div>
+          <div class="card-body">
+            <i data-lucide="scan-line"></i>
+            <h3>Scanner Digital</h3>
+            <p>Detección de fallas en tiempo real con precisión del 100%.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-img"><img src="mantenimiento.jpg" alt="Mantenimiento"></div>
+          <div class="card-body">
+            <i data-lucide="wrench"></i>
+            <h3>Mantenimiento</h3>
+            <p>Cuidado preventivo para evitar reparaciones costosas.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-img"><img src="frenos.jpg" alt="Frenos"></div>
+          <div class="card-body">
+            <i data-lucide="shield-alert"></i>
+            <h3>Sistemas de Frenado</h3>
+            <p>Seguridad crítica revisada por expertos en alta fricción.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipo" class="section">
+    <div class="container">
+      <h2 class="section-title reveal" style="text-align: center;">Nuestro <span class="text-gradient">Staff Élite</span></h2>
+      <div class="grid-team">
+        <div class="team-card reveal">
+          <div class="member-img"><img src="quienes.jpg" alt="Ronny"></div> <div class="member-info">
+            <h3>Ronny Nachmann</h3>
+            <p class="role">Especialista Diésel y Electrónica</p>
+            <div class="member-contact">
+              <a href="mailto:ronny@globalmec.com"><i data-lucide="mail"></i></a>
+              <a href="#"><i data-lucide="linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <div class="member-img"><img src="quienes.jpg" alt="Jorge"></div> <div class="member-info">
+            <h3>Jorge Nachmann</h3>
+            <p class="role">Motores Marinos y Navales</p>
+            <div class="member-contact">
+              <a href="mailto:jorge@globalmec.com"><i data-lucide="mail"></i></a>
+              <a href="#"><i data-lucide="linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section dark">
+    <div class="container grid-2">
+      <div class="reveal">
+        <h2>¿Dudas? <span class="text-gradient">Contáctanos</span></h2>
+        <p>Estamos ubicados en Santiago, listos para atender tu flota o vehículo particular.</p>
+        <div class="contact-details">
+            <p><i data-lucide="phone"></i> +56 9 1234 5678</p>
+            <p><i data-lucide="map-pin"></i> Av. Industrial 1234, Santiago</p>
+        </div>
+      </div>
+      <form id="form" class="form reveal">
+        <input type="text" placeholder="Nombre" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <textarea rows="4" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        <p id="respuesta"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 GlobalMec - Potencia y Precisión. Diseñado por Abca Desarrollador independiente.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
