@@ -61,7 +61,7 @@ if (contactForm) {
         // Simulación de envío (Reemplazar con servicio real como EmailJS)
         setTimeout(() => {
             respuesta.innerHTML = `<span style="color: #4ade80; display: block; margin-top: 1rem; font-weight: 600;">
-                ✅ ¡Mensaje enviado! Nos contactaremos a la brevedad.
+                ✅ ¡Solicitud enviada! Nos contactaremos a la brevedad.
             </span>`;
             this.reset();
             btn.innerText = "Enviar Solicitud";
